@@ -1,30 +1,30 @@
 const degit = require('degit');
 
 const repos = [
-  'meteorite-map',
-  'force-directed-country-map',
-  'global-temperature-heatmap',
-  'dungeon-crawl',
-  'the-game-of-life',
-  'react-recipe-rolodex',
-  'camper-list',
-  'markdown-preview',
-  'countdown-to-summer',
-  'flashcards',
-  'fin-terest',
-  'benimadim',
-  'bookwall',
-  'theshortrun',
-  'rockthevote',
-  'portfolio',
-  'showmethemoney',
-  'ilikethenightlife',
-  'file-metadata-microservice',
-  'image-search-abstraction-layer',
-  'url-shortener-microservice',
-  'request-header-parser-microserver',
-  'timestamp-microserver',
-  'memory',
+  'meteorite-map',  //removed
+  'force-directed-country-map',  //removed
+  'global-temperature-heatmap',  //removed
+  'dungeon-crawl',  //removed
+  'the-game-of-life',  //removed
+  'react-recipe-rolodex',  //removed
+  'camper-list',  //removed
+  'markdown-preview',  //removed
+  'countdown-to-summer',  //removed
+  'flashcards',  //removed
+  'fin-terest',  //removed
+  'benimadim',  //removed
+  'bookwall',  //removed
+  'theshortrun',  //removed
+  'rockthevote',  //removed
+  'portfolio',  //removed
+  'showmethemoney',  //removed
+  'ilikethenightlife',  //removed
+  'file-metadata-microservice',  //removed
+  'image-search-abstraction-layer',  //removed
+  'url-shortener-microservice',  //removed
+  'request-header-parser-microserver',  //removed
+  'timestamp-microserver',  //removed
+  'memory',  //removed
 ];
 
 repos.forEach(repo => {
