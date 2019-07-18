@@ -1,0 +1,13 @@
+<div class="content-box">
+  <h1>Create a new poll for others!</h1>
+  <form ng-submit="submit(newPoll)">
+    <div id="new-poll">
+      <label for="question"><h2>What is your question?</h2></label>
+      <input type="text" id="question" placeholder="Question" ng-model="newPoll.question"><br>
+
+      <label for="answer"><h2>What is your answer?</h2></label>
+      <input type="text" id="answer" placeholder="Choice" ng-model="choice"><br>
+      <button type="submit" style="margin-top:10px;">Add</button>
+    </div>
+  </form>
+</div>

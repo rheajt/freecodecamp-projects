@@ -1,0 +1,23 @@
+{
+  "name": "bookwall",
+  "version": "1.0.0",
+  "description": "fcc basejump assignment",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "jordan rhea",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "mongoose": "^4.4.6",
+    "passport": "^0.3.2",
+    "passport-google-oauth20": "^1.0.0",
+    "socket.io": "^1.4.5",
+    "xml2js": "^0.4.16",
+    "dotenv": "^2.0.0"
+  }
+}

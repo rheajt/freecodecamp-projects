@@ -1,0 +1,11 @@
+<div class="btn-group btn-group-justified" ng-hide="location.path() === '/'">
+  <div class="btn-group">
+    <a href="#/wall" class="btn btn-default" ng-class="{active: location.path() === '/wall'}">The Wall</a>
+  </div>
+  <div class="btn-group">
+    <a href="#/wall/add" class="btn btn-default" ng-class="{active: location.path() === '/wall/add'}">Add to Wall</a>
+  </div>
+  <div class="btn-group">
+    <a href="#/bookshelf" class="btn btn-default" ng-class="{active: location.path() === '/bookshelf'}">Your Bookshelf</a>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+{
+  "name": "request-header-parser-microserver",
+  "version": "1.0.0",
+  "description": "fcc assignment to create a request header parser",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rheajt/request-header-parser-microserver.git"
+  },
+  "author": "jordan rhea",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rheajt/request-header-parser-microserver/issues"
+  },
+  "homepage": "https://github.com/rheajt/request-header-parser-microserver#readme",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}

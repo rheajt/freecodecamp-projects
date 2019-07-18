@@ -1,0 +1,27 @@
+.container {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+h1 {
+  text-align: center;
+  font-family: sans-serif;
+}
+.node {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+.node .selected {
+  stroke: black;
+}
+
+.link {
+  stroke: #999;
+}
+
+.brush .extent {
+  fill-opacity: .1;
+  stroke: #fff;
+  shape-rendering: crispEdges;
+}

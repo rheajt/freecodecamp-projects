@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css?family=Marck+Script);
+body,
+html {
+  background-color: black;
+  box-sizing: border-box;
+  padding-top: 20px;
+}
+.search-heading {
+  color: white;
+}
+.row {
+  margin-top: 10px;
+}
+.box {
+  padding: 5px;
+  background-color: white;
+  border-radius: 2px;
+}
+.stock.box {
+  margin: 5px;
+  border: 5px solid white;
+}
+.glyphicon-remove:hover {
+  color: white;
+  text-shadow:
+   -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+footer {
+  bottom: 0;
+}
+
+.glyphicon-refresh-animate {
+    -animation: spin .7s infinite linear;
+    -webkit-animation: spin2 .7s infinite linear;
+}
+
+@-webkit-keyframes spin2 {
+    from { -webkit-transform: rotate(0deg);}
+    to { -webkit-transform: rotate(360deg);}
+}
+
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg);}
+    to { transform: scale(1) rotate(360deg);}
+}

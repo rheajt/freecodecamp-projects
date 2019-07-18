@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>URL Shortener Microservice</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center">URL Shortener Microservice</h1>
+      <div class="row">
+        <div class="col-xs-8 col-xs-offset-2">
+        <h3><b>User Story:</b> I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.</h3>
+
+        <h3><b>User Story:</b> If I pass an invalid URL that doesn't follow the valid http://www.example.com format, the JSON response will contain an error instead.</h3>
+
+        <h3><b>User Story:</b> When I visit that shortened URL, it will redirect me to my original link.</h3>
+          <blockquote>
+            <h3>Examples:</h3>
+            <h4>To add a new url...</h4>
+            <kbd>http://makeitshorter.herokuapp.com/shorten/http://jordanrhea.com</kbd>
+            <h4>Response...</h4>
+            <kbd>{"_id":2,"shorturl":"http://makeitshorter.herokuapp.com/2","longurl":"http://jordanrhea.com"}</kbd>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<div ng-include="'app/shared/navbarView.html'"></div>
+<div class="container">
+  <div class="row" ng-show="authData">
+    <div class="col-sm-3 text-center">
+      <img ng-src="{{ authData.google.profileImageURL }}" class="img-responsive img-rounded">
+      <h2>{{ authData.google.displayName }}</h2>
+      <div ng-show="userData.account === 'teacher'">
+        <hr>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Quiz Title</th>
+              <th>Number of cards...</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="each in teachercards" ng-click="listLink(each.$id)">
+              <td>{{ each.title }}</td>
+              <td>{{ each.cards.length }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col-sm-9" ng-show="userData.account === 'student'">
+      <div class="row" ng-repeat="each in studentcards | filter:{username: authData.google.email}">
+        <div class="col-xs-6" ng-repeat="q in each.questions">
+          <div class="flip">
+            <div class="card" card-flip>
+              <div class="face front">{{ q.front }}</div>
+              <div class="face back">{{ q.back }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-9" ng-show="userData.account === 'teacher'">
+        <div class="col-xs-4" ng-repeat="each in studentcards">
+          <div class="flip">
+            <div class="card" card-flip>
+              <div class="face front">{{ each.front }}</div>
+              <div class="face back">{{ each.back }}</div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>

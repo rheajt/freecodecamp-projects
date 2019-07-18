@@ -1,0 +1,65 @@
+<div class="row">
+  <div class="col-sm-2">
+    <div class="row">
+      <div class="col-xs-12">
+        <img ng-src="{{ user.profilePicture }}" class="img-responsive img-circle center-block">
+        <h4>{{ user.displayName }} <small>{{ user.email }}</small></h4>
+        <form class="form-inline" ng-submit="updateUser(user)">
+          <div class="input-group">
+            <input type="text" class="form-control" id="userDescription" placeholder="Location" ng-model="user.description">
+            <span class="input-group-btn">
+              <button type="submit" class="btn btn-primary"><i class="fa fa-pencil"></i></button>
+            </span>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <ul class="nav nav-pills nav-stacked">
+          <li ng-class="{'active': currentPanel === 'wall'}"><a class="" ng-click="currentPanel = 'wall'">Wall</a></li>
+          <li ng-class="{'active': currentPanel === 'search'}"><a class="" ng-click="currentPanel = 'search'">Search</a></li>
+          <li ng-class="{'active': currentPanel === 'requests'}"><a class="" ng-click="currentPanel = 'requests'">Requests</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel-container" ng-switch on="currentPanel">
+    <div class="book-panel" ng-switch-default>
+      <div class="col-sm-2" ng-repeat="book in books">
+        <div class="thumbnail" >
+          <img class="book-thumb-image" ng-src="{{ book.imageUrl }}">
+          <div class="text-center">
+            <button class="btn btn-default" ng-hide="user._id === book.ownedBy" ng-click="requestBook(book)">Request <i class="fa fa-plus"></i></button>
+            <button class="btn btn-default" ng-show="user._id === book.ownedBy" ng-click="removeBook(book)">Remove <i class="fa fa-minus"></i></button>
+            <!-- <button class="btn btn-default" ng-show="user._id === book.requestedBy" ng-click="removeRequest(book)">Remove <i class="fa fa-minus"></i></button> -->
+            <button class="btn btn-default" ng-show="(user._id === book.ownedBy) && (book.requestedBy !== user._id)" ng-click="acceptRequest(book)">Accept Request <i class="fa fa-check"></i></button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="search-panel" ng-switch-when="search">
+      <form class="form-inline" ng-submit="search(bookSearch)">
+        <label><b>Search for books on Goodreads</b></label>
+        <div class="input-group">
+          <input type="search" class="form-control" ng-model="bookSearch">
+          <span class="input-group-btn">
+            <button type="submit" class="btn btn-default">Go!</button>
+          </span>
+        </div>
+      </form>
+
+      <div class="row">
+        <div class="col-sm-2" ng-repeat="result in searchResults | limitTo:10">
+          <div class="thumbnail">
+            <img class="img-responsive" ng-src="{{ result.imageUrl }}">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="requests-panel" ng-switch-when="requests">
+      requests go here
+    </div>
+  </div>
+</div>

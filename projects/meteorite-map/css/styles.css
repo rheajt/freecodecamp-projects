@@ -1,0 +1,21 @@
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+
+h1 {
+  text-align: center;
+  font-family: sans-serif; }
+
+.map {
+  width: 960px;
+  height: 700px;
+  margin: 0 auto;
+  border: 3px solid black;
+  border-radius: 3px;
+  background: #386fcc; }
+
+path {
+  stroke: #386fcc;
+  stroke-width: 1px;
+  fill: #a3f676; }

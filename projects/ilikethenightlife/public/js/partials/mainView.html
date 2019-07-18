@@ -1,0 +1,26 @@
+<div class="jumbotron">
+  <h1>i like the nightlife</h1>
+  <!-- <a class="btn btn-info btn-lg" href="/auth/facebook" ng-hide="userData.isAuthenticated">Login</a> -->
+  <div class="input-group">
+    <input type="text" class="form-control" placeholder="What city are you searching in?" ng-model="loc">
+    <span class="input-group-btn">
+      <button class="btn btn-default" type="button" ng-click="search(loc)" >Search Yelp!</button>
+    </span>
+  </div>
+  <h2 ng-show="barName">You are going to {{ barName }}</h2>
+  <!-- /input-group -->
+</div>
+
+<div class="row search-results" ng-repeat="business in results">
+  <div class="col-sm-1">
+    <img class="img-responsive img-circle" ng-src="{{business.image_url}}" alt="..." style="width:64px;">
+  </div>
+  <div class="col-sm-10">
+    <h4 class="media-heading">{{business.name}}</h4>
+    {{business.snippet_text}}
+  </div>
+  <div class="col-sm-1" ng-show="userData.isAuthenticated">
+    <span class="glyphicon glyphicon-plus" ng-click="goingTonight(business)"></span>
+  </div>
+</div>
+

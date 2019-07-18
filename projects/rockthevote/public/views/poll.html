@@ -1,0 +1,11 @@
+<div class="content-box">
+  <h1>{{ poll.question }}</h1>
+  <div class="page-buttons">
+    <button ng-repeat="response in poll.responses" ng-click="castVote(response._id)">{{ response.answer }} <span>{{ response.votes }}</span></button>
+  </div>
+  <div ng-show="loggedIn" id="new-answer">
+    <h2>Add a new answer...</h2>
+    <input type="text" ng-model="newAnswer">
+    <button ng-click="addAnswer(newAnswer)">Add...</button>
+  </div>
+</div>

@@ -1,0 +1,6 @@
+<div class="book-thumb">
+  <img class="book-thumb-image" ng-src="{{ book.imageUrl }}">
+  <div class="book-thumb-text">
+    <i class="fa fa-plus" ng-click="requestBook(book)" ng-hide="book.ownedBy === user._id"></i>
+  </div>
+</div>

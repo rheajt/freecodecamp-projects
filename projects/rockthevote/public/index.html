@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="rockthevoteApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>rockthevote</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/angular.chartjs/latest/angular-chart.css">
+    <link href="public/css/style.css" rel="stylesheet">
+  </head>
+  <body ng-cloak>
+
+    <div class="page-buttons" ng-controller="IndexCtrl">
+      <a ng-hide="user" href="/auth/facebook"><span class="fa fa-facebook"></span> LOGIN</a>
+      <a ng-show="user" href="#/polls/my">WELCOME, {{ user.displayName | uppercase }}!</a>
+      <a href="#/">MAIN</a>
+      <a ng-show="user" href="#/new">ADD NEW POLL</a>
+      <a ng-show="user" href="/auth/facebook/logout">LOGOUT</a>
+    </div>
+    <div ng-view></div>
+
+    <!-- Angular Scripts -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/angular.chartjs/latest/angular-chart.min.js"></script>
+    <!-- Main -->
+    <script type="text/javascript" src="public/js/app.js"></script>
+    <!-- Controllers -->
+    <script type="text/javascript" src="public/js/controllers/IndexCtrl.js"></script>
+    <script type="text/javascript" src="public/js/controllers/MainCtrl.js"></script>
+    <script type="text/javascript" src="public/js/controllers/NewCtrl.js"></script>
+    <script type="text/javascript" src="public/js/controllers/PollCtrl.js"></script>
+    <script type="text/javascript" src="public/js/controllers/MypollsCtrl.js"></script>
+    <!-- Services -->
+    <script type="text/javascript" src="public/js/services/voteService.js"></script>
+    <script type="text/javascript" src="public/js/services/userService.js"></script>
+
+  </body>
+</html>

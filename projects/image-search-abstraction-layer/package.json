@@ -1,0 +1,25 @@
+{
+  "name": "image-search-abstraction-layer",
+  "version": "1.0.0",
+  "description": "fcc basejump assignment",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rheajt/image-search-abstraction-layer.git"
+  },
+  "author": "jordan rhea",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rheajt/image-search-abstraction-layer/issues"
+  },
+  "homepage": "https://github.com/rheajt/image-search-abstraction-layer#readme",
+  "dependencies": {
+    "dotenv": "^1.2.0",
+    "express": "^4.13.3",
+    "mongodb": "^2.1.3",
+    "request": "^2.67.0"
+  }
+}

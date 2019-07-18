@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="col-xs-4">
+    <div class="media" ng-repeat="user in allUsers" style="background-color:rgba(255,255,255,0.2);padding:3px;">
+      <a class="media-left" ng-href="/#/fins/{{user.username}}">
+        <img class="media-object" ng-src="{{user.photos[0].value}}" alt="Image">
+      </a>
+      <div class="media-body">
+        <h3 class="media-heading">{{user.displayName}} <small><b>@{{user.username}}</b></small></h3>
+      </div>
+    </div>
+  </div>
+</div>

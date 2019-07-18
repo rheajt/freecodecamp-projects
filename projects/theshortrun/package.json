@@ -1,0 +1,26 @@
+{
+  "name": "theshortrun",
+  "version": "1.0.0",
+  "description": "fcc basejump assignment",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rheajt/theshortrun.git"
+  },
+  "author": "jordan rhea",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rheajt/theshortrun/issues"
+  },
+  "homepage": "https://github.com/rheajt/theshortrun#readme",
+  "dependencies": {
+    "dotenv": "^2.0.0",
+    "express": "^4.13.4",
+    "mongoose": "^4.4.6",
+    "socket.io": "^1.4.5"
+  }
+}

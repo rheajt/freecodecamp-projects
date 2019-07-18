@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Final Countdown</title>
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="dist/css/normalize.css">
+  <link rel="stylesheet" href="dist/css/skeleton.css">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" href="dist/css/countdown.css">
+</head>
+
+<body class="container">
+
+  <div class="settings">
+    <button class="button-default" id="view-switch"><i class="fa fa-cog fa-2x"></i></button>
+  </div>
+
+  <div class="main">
+
+    <div class="quote row">
+
+      <blockquote>
+        <h1 class="motivate"></h1>
+      </blockquote>
+    </div>
+
+    <div class="countdown row">
+
+
+      <div class="six columns">
+        <h4 id="todayClock"></h4>
+      </div>
+
+      <div class="six columns">
+        <h4 id="yearClock"></h4>
+      </div>
+    </div>
+
+    <form id="save-dates">
+      <div class="setup row">
+        <div class="six columns">
+          <label>When do you finish your day?</label>
+          <input type="text" id="todayEnd" />
+        </div>
+        <div class="six columns">
+          <label>When is the last day of your school year?</label>
+          <input type="text" id="yearEnd" />
+        </div>
+        <button type="submit" class="button-primary">Save dates</button>
+      </div>
+    </form>
+
+  </div> <!-- close of the main div -->
+
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="dist/js/jquery.countdown.min.js"></script>
+  <script type="text/javascript" src="dist/js/countdown.js"></script>
+</body>
+
+</html>

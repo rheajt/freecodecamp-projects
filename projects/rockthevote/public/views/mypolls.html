@@ -1,0 +1,11 @@
+<div class="content-box">
+  <h1>These are your polls...</h1>
+  <div class="thumbnail-box">
+    <div class="thumbnail" ng-repeat="poll in polls" ng-href="#/poll/{{ poll.id }}">
+      <h1>{{ poll.question }}</h1>
+      <canvas ng-if="poll.data.length" id="doughnut" class="chart chart-doughnut" chart-data="poll.data" chart-labels="poll.labels">
+      </canvas>
+      <button class="btn" ng-click="deletePoll(poll.id)">DELETE</button>
+    </div>
+  </div>
+</div>

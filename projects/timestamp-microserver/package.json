@@ -1,0 +1,26 @@
+{
+  "name": "timestamp-microserver",
+  "version": "1.0.0",
+  "description": "fcc assignment to create a timestamp api",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rheajt/timestamp-microserver.git"
+  },
+  "keywords": [
+    "fcc"
+  ],
+  "author": "jordan rhea",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rheajt/timestamp-microserver/issues"
+  },
+  "homepage": "https://github.com/rheajt/timestamp-microserver#readme",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}

@@ -1,0 +1,33 @@
+.box {
+    border: 1px solid black;
+    width: 200px;
+    height: 100px;
+    margin: 5px;
+    float: left;
+    border-radius: 5%;
+    text-align: center;
+}
+
+h1 {
+    display: none;
+}
+
+.unsolved {
+    background-color: white;
+}
+
+.solved {
+    background-color: blue;
+}
+
+.key {
+    display: none;
+}
+
+.guess {
+    display: block;
+}
+
+.scoreboard {
+    display: none;
+}

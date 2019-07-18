@@ -1,0 +1,21 @@
+<form class="form-inline" ng-submit="updateUser(user)">
+
+  <div class="row">
+    <div class="col-sm-1">
+      <img ng-src="{{ user.profilePicture }}" class="img-responsive img-circle text-center" style="padding-top: 15px;">
+    </div>
+    <div class="col-sm-11">
+      <h2>{{ user.displayName }} <small>{{ user.email }}</small></h2>
+      <div class="form-group">
+        <label class="sr-only" for="userDescription">Where do you live?</label>
+        <input type="text" class="form-control" id="userDescription" placeholder="Location" ng-model="user.description">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+
+</form>
+  <h1>Books requested</h1>
+  <book-panel ng-repeat="book in requested"></book-panel>
+  <h1>Books owned</h1>
+  <book-panel ng-repeat="book in books"></book-panel>

@@ -1,0 +1,10 @@
+<div class="content-box">
+  <h1>Rock the Vote</h1>
+  <div class="thumbnail-box">
+    <div class="thumbnail" ng-repeat="poll in polls" ng-click="viewPoll(poll.id)">
+      <h1>{{ poll.question }}</h1>
+      <canvas ng-if="poll.data.length" id="doughnut" class="chart chart-doughnut" chart-data="poll.data" chart-labels="poll.labels">
+      </canvas>
+    </div>
+  </div>
+</div>

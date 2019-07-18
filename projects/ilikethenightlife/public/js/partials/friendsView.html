@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-sm-4" ng-repeat="friend in friends">
+    <div class="well">
+      <div class="row">
+        <div class="col-sm-2">
+          <img ng-src="{{ friend.facebook.profileImg }}">
+        </div>
+        <div class="col-sm-10">
+          <h4>{{ friend.facebook.displayName }}</h4>
+          <h5>Going to the <b>{{ friend.goingTo.barName }}</b></h5>
+          <h5>on {{ friend.goingTo.goingOn | date }}</h5>
+          <button class="btn btn-info" ng-click="notGoing()" ng-show="userData.facebook.id === friend.facebook.id">Not going...</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

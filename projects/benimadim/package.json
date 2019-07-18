@@ -1,0 +1,38 @@
+{
+  "name": "benimadim",
+  "version": "1.0.0",
+  "description": "my name is...",
+  "main": "server.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rheajt/benimadim"
+  },
+  "homepage": "",
+  "bugs": "",
+  "keywords": [
+    "MEAN",
+    "MongoDB",
+    "Express",
+    "Angular",
+    "Node",
+    "javascript",
+    "boilerplate"
+  ],
+  "author": "jordan rhea",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "dotenv": "^2.0.0",
+    "express": "^4.13.3",
+    "express-session": "^1.13.0",
+    "gm": "^1.21.1",
+    "imagemagick": "^0.1.3",
+    "mongoose": "^4.4.9",
+    "passport": "^0.3.2",
+    "passport-facebook": "^2.1.0",
+    "request": "^2.69.0"
+  }
+}

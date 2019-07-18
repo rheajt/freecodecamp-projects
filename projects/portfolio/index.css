@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'ChalkBoard';
+  src: url('a-song-for-jennifer.ttf');
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* hide the navbar until scroll */
+.navbar {
+  display: none;
+}
+
+.navbar-nav li.active {
+  background-color: black !important;
+  color: white !important;
+}
+
+/*set the sizing of the different sections to be min the view height */
+#home, #about, #portfolio, #contact {
+  padding-top: 70px;
+  min-height: 100vh;
+}
+
+#home {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fceabb+0,fccd4d+24,f8b500+75,fbdf93+100 */
+  background: #fceabb; /* Old browsers */
+  background: -moz-linear-gradient(45deg,  #fceabb 0%, #fccd4d 24%, #f8b500 75%, #fbdf93 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg,  #fceabb 0%,#fccd4d 24%,#f8b500 75%,#fbdf93 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg,  #fceabb 0%,#fccd4d 24%,#f8b500 75%,#fbdf93 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+#home .jumbotron {
+  background-image: url('./portfolio-imgs/chalkboard-blue.jpg');
+  border-width: 15px;
+  border-image: url('./portfolio-imgs/wood-grain.jpg') 10% round;
+}
+
+.chalk {
+  color: #FFFED2 !important;
+  font-family: 'ChalkBoard' !important;
+  padding-right: 20px;
+  text-shadow: 1px 0 0 black, 0 -1px 0 black, 0 1px 0 black, -1px 0 0 black;
+}
+
+#about {
+  background-image: url('/portfolio-imgs/welcome.jpg');
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+}
+
+#about.jumbotron, #contact.jumbotron {
+  background: rgba(0, 0, 0, 0);
+}
+
+.thumbnail img {
+  height: 170px;
+  text-align: center;
+}
